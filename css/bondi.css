@@ -1,0 +1,238 @@
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+:root {
+    --dark-color: #19283f;
+    --green-color: #33d1cc;
+    --red-color: #ff3150;
+    --yellow-color: #ffc400;
+    --section-color: #eff7fa;
+}
+
+.main-btn {
+    background-color: var(--red-color);
+    color: var(--yellow-color);
+    padding: 0.5rem 1rem;
+}
+
+.main-title::after {
+    content: "";
+    width: 120px;
+    height: 2px;
+    position: absolute;
+    background-color: var(--green-color);
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.main-btn:hover {
+    color: var(--yellow-color);
+    background-color: var(--red-color);
+}
+
+.navbar {
+    background-color: var(--dark-color);
+}
+
+.navbar .navbar-nav .nav-link {
+    color: white;
+}
+
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link:focus {
+    color: var(--green-color);
+}
+
+.navbar .search {
+    border-left: 1px solid var(--green-color);
+}
+
+.navbar .search svg {
+    font-size: 16px;
+    color: var(--green-color);
+}
+
+.navbar .navbar-toggler {
+    color: white;
+    border-color: white;
+    font-size: 25px;
+}
+
+.navbar .navbar-toggler:focus {
+    box-shadow: none;
+}
+
+/*End Nav */
+.landing {
+    background-color: var(--dark-color);
+    min-height: calc(100vh - 72px);
+}
+
+/*End Landing */
+.feature .icon-holder {
+    height: 200px;
+}
+
+.feature .icon-holder svg {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.feature .icon-holder .number {
+    color: var(--section-color);
+    font-size: 12rem;
+}
+
+.feature .icon-holder .icon {
+    color: var(--green-color);
+    font-size: 4rem;
+}
+
+.feature .feat h4 {
+    color: var(--yellow-color);
+}
+
+/*End Feature*/
+.our-work {
+    background-color: var(--section-color);
+}
+
+.our-work ul .Active {
+    background-color: var(--red-color);
+    color: var(--yellow-color);
+}
+
+.our-work ul li {
+    padding: 0.5rem 1rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.our-work ul li:not(.Active):hover {
+    color: var(--red-color);
+}
+
+.our-work .box {
+    overflow: hidden;
+    position: relative;
+    padding: 5px;
+}
+
+.our-work .box::before {
+    content: attr(data-work);
+    position: absolute;
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    background-color: rgb(51 209 204 / 76%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(calc(-100% - 5px));
+    font-size: 1.5rem;
+    color: white;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+.our-work .box:hover::before {
+    transform: translateX(0);
+    cursor: pointer;
+}
+
+.our-work a:hover {
+    background-color: var(--red-color);
+}
+
+/*End Our-work*/
+.about-us .desc {
+    max-width: 500px;
+}
+
+/*End about */
+.team {
+    background-color: var(--section-color);
+}
+
+.team h2 {
+    color: var(--yellow-color);
+}
+
+.team .box h4 {
+    background-color: var(--green-color);
+    color: white;
+    padding: 16px;
+}
+
+.team .box p {
+    padding: 1rem;
+    font-weight: 500;
+}
+
+/* End team */
+.y-proj {
+    background-color: var(--dark-color);
+}
+
+.y-proj h2 {
+    color: white;
+}
+
+/*End proj*/
+.subscribe {
+    background-color: var(--yellow-color);
+}
+
+.subscribe .enter {
+    border: none;
+    border-bottom: 1px solid white;
+}
+
+.subscribe .enter:focus {
+    outline: none;
+}
+
+.subscribe ::placeholder {
+    color: white;
+}
+
+.subscribe input[type="submit"] {
+    background-color: var(--dark-color);
+    color: var(--yellow-color);
+}
+
+/*End subscribe*/
+footer {
+    background-color: var(--dark-color);
+}
+
+footer .copyright>span {
+    color: var(--green-color);
+}
+
+footer .copyright div span {
+    color: var(--yellow-color);
+}
+
+footer .contact ul svg {
+    width: 20px;
+    height: 20px;
+}
+
+footer .facebook {
+    background-color: #1877f2
+}
+
+footer .twitter {
+    background-color: #1da1f2;
+}
+
+footer .linkedin {
+    background-color: #0077b5;
+}
+
+footer .youtube {
+    background-color: #ff0000;
+}
